@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For My Beautiful Sister ❤️</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================
+         WELCOME / SURPRISE SCREEN
+    ====================================== -->
+
+    <div class="welcome" id="welcome">
+
+        <div class="welcome-content">
+
+            <div class="gift">
+                🎁
+            </div>
+
+            <p>
+                A little surprise for
+            </p>
+
+            <h1>
+                My Beautiful Sister
+            </h1>
+
+            <p class="welcome-small">
+                I made something special just for you ❤️
+            </p>
+
+            <button onclick="openSurprise()">
+                Open Your Surprise ✨
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================
+         MAIN WEBSITE
+    ====================================== -->
+
+    <main id="mainContent" class="hidden">
+
+
+        <!-- =====================================
+             HERO SECTION
+        ====================================== -->
+
+        <section class="hero">
+
+            <div class="floating-hearts">
+                ❤️ 💕 💗 💖 💕 ❤️
+            </div>
+
+
+            <p class="subtitle">
+                To the most special person...
+            </p>
+
+
+            <h1>
+                Happy Birthday
+            </h1>
+
+
+            <h2>
+                My Beautiful Sister ❤️
+            </h2>
+
+
+            <p class="hero-text">
+                Today is all about celebrating YOU.
+            </p>
+
+
+            <button
+                class="main-button"
+                onclick="goToMemories()">
+
+                See Our Memories 📸
+
+            </button>
+
+        </section>
+
+
+
+        <!-- =====================================
+             PHOTO MEMORIES
+        ====================================== -->
+
+        <section
+            class="memories"
+            id="memories">
+
+
+            <p class="section-small">
+                OUR LITTLE WORLD
+            </p>
+
+
+            <h2>
+                Beautiful Memories 📸
+            </h2>
+
+
+            <p class="section-description">
+
+                Every picture has a story,
+                and every story has you in it.
+
+            </p>
+
+
+
+            <!-- SLIDESHOW -->
+
+            <div class="slider">
+
+
+                <img
+                    id="slideImage"
+                    src="images/sister1.jpg"
+                    alt="Beautiful sister memory"
+                >
+
+
+                <!-- PREVIOUS -->
+
+                <button
+                    class="slider-button previous"
+                    onclick="previousSlide()">
+
+                    ❮
+
+                </button>
+
+
+                <!-- NEXT -->
+
+                <button
+                    class="slider-button next"
+                    onclick="nextSlide()">
+
+                    ❯
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- SLIDESHOW DOTS -->
+
+            <div class="dots">
+
+                <span
+                    onclick="showSlide(0)">
+                </span>
+
+                <span
+                    onclick="showSlide(1)">
+                </span>
+
+                <span
+                    onclick="showSlide(2)">
+                </span>
+
+                <span
+                    onclick="showSlide(3)">
+                </span>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================
+             VIDEO SECTION
+        ====================================== -->
+
+        <section class="video-section">
+
+
+            <p class="section-small">
+                A LITTLE SURPRISE 🎬
+            </p>
+
+
+            <h2>
+                Our Special Moments ❤️
+            </h2>
+
+
+            <p class="section-description">
+
+                Some memories deserve to be
+                watched again and again.
+
+            </p>
+
+
+
+            <!-- VIDEO -->
+
+            <div class="video-container">
+
+
+                <video
+                    id="sisterVideo"
+                    controls
+                    playsinline
+                    preload="metadata"
+                    poster="images/sister1.jpg">
+
+
+                    <source
+                        src="videos/vd1.mp4"
+                        type="video/mp4">
+
+
+                    Your browser does not support
+                    the video element.
+
+
+                </video>
+
+
+            </div>
+
+
+
+            <p class="video-caption">
+
+                Made with lots of love,
+                just for you. 🫶
+
+            </p>
+
+
+        </section>
+
+
+
+        <!-- =====================================
+             BIG WISH / LETTER
+        ====================================== -->
+
+        <section class="wish">
+
+
+            <div class="wish-card">
+
+
+                <div class="flower">
+                    🌸
+                </div>
+
+
+                <p class="section-small">
+                    A LETTER FOR YOU
+                </p>
+
+
+                <h2>
+                    Dear Sister,
+                </h2>
+
+
+
+                <p>
+
+                    You are not just my sister.
+                    You are one of the most beautiful
+                    and precious parts of my life.
+
+                </p>
+
+
+
+                <p>
+
+                    From our silly fights to our
+                    craziest laughs, from sharing secrets
+                    to making unforgettable memories,
+                    every moment with you is special.
+
+                </p>
+
+
+
+                <p>
+
+                    Life keeps changing and we keep
+                    growing, but one thing will never
+                    change — you will always be my sister
+                    and one of my favourite people
+                    in this world.
+
+                </p>
+
+
+
+                <p>
+
+                    I hope your life is filled with
+                    happiness, success, love, peace
+                    and countless beautiful moments.
+
+                </p>
+
+
+
+                <p>
+
+                    May every dream you have come true,
+                    and may your beautiful smile
+                    never fade.
+
+                </p>
+
+
+
+                <h3>
+                    Happy Birthday, Sis! ❤️
+                </h3>
+
+
+
+                <p class="last-line">
+
+                    I am so lucky to have you
+                    in my life. 🫶
+
+                </p>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================
+             FINAL SURPRISE
+        ====================================== -->
+
+        <section class="final">
+
+
+            <div class="final-content">
+
+
+                <div class="sparkles">
+                    ✨ ✨ ✨
+                </div>
+
+
+
+                <h2>
+
+                    Lucky to have you
+                    as my sister ❤️
+
+                </h2>
+
+
+
+                <p>
+
+                    No matter where life takes us,
+                    you'll always have a special place
+                    in my heart.
+
+                </p>
+
+
+
+                <div class="heart">
+                    ❤️
+                </div>
+
+
+
+                <h3>
+                    Love You Forever, Sis! 🫶
+                </h3>
+
+
+
+                <p class="made">
+
+                    Made with love,
+                    especially for you.
+
+                </p>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================
+             FOOTER
+        ====================================== -->
+
+        <footer>
+
+            <p>
+                ❤️ Made with love for my sister ❤️
+            </p>
+
+        </footer>
+
+
+    </main>
+
+
+
+    <!-- =====================================
+         JAVASCRIPT
+    ====================================== -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
